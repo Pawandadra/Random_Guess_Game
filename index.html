@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess if you can</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <p id="title1">Welcome to the world of</p>
+        <h1>Guess and Input</h1>
+    </header>
+    <br>
+    <form>
+        <input type="number" id="userInput" placeholder="Enter any number between 0 and 100">
+        <br>
+        <input type="reset" value="Reset Now" class="btn">
+        <button type = "button" onclick="handleInput()" class="btn">Submit Now</button>
+    </form>
+    <br>
+    <div id ="output"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
