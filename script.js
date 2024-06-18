@@ -23,7 +23,7 @@ const handleInput = () => {
       }
       else {
          const score = 101 - tries;
-         message = "Congratulations !! You guessed the correct Number.\n Your Score is :" + score;
+         message = "Congratulations !! You guessed the correct Number.<br> Your Score is :" + score;
 
          tries = 0;
          randomNum = Math.floor(Math.random() * 101);
@@ -31,7 +31,7 @@ const handleInput = () => {
       
 
    const outputElement = document.getElementById('output');
-   outputElement.textContent = message;
+   outputElement.innerHTML = message;
 
    userInput.value = '';
 }
