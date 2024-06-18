@@ -2,6 +2,12 @@
 let tries = 0;
 let randomNum = Math.floor(Math.random() * 101)
 
+document.getElementById('userInput').addEventListener('keydown', (event) => {
+   if (event.key === 'Enter') {
+       handleInput();
+   }
+});
+
 const handleInput = () => {
    const userInput = document.getElementById('userInput');
    let inputValue = userInput.value;
