@@ -16,10 +16,10 @@ const handleInput = () => {
 
    let message;
       if (inputValue > randomNum) {
-         message = "Your guess is greater than random number. Please try again !!"
+         message = "Your guess is greater than random number.<br> Please try again !!"
       }
       else if (inputValue < randomNum) {
-         message = "Your guess is smaller than random number. Please try again !!"
+         message = "Your guess is smaller than random number.<br> Please try again !!"
       }
       else {
          const score = 101 - tries;
